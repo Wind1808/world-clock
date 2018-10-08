@@ -9,6 +9,10 @@ module.exports = function(defaults) {
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
+
+  app.import('node_modules/moment/moment.js');
+  app.import('node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.js');
+
   //
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That

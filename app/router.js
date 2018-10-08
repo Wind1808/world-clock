@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('clock');
+  this.route('timezones');
 });
 
 export default Router;
