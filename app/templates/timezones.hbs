@@ -1,0 +1,21 @@
+<h2>Add Timezone</h2>
+
+<div>
+  {{select-tz
+    timezones=timezones
+    selectedTimezone=selectedTimezone
+    action=(action (mut selectedTimezone))
+  }}
+</div>
+
+<button {{action "add"}}>Add Timezone</button>
+
+<h2>My Timezones</h2>
+
+<ul>
+  {{#each model as |timezone|}}
+    <li>
+      {{timezone.name}} <button {{action "remove" timezone}}>Delete</button>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+<select {{action "change" on="change"}}>
+  {{#each timezones as |tz|}}
+    <option
+      value={{tz.offset}}
+      selected={{is-equal tz.name selectedTimezone.name}}
+    >
+      {{tz.name}}
+    </option>
+  {{/each}}
+</select>

@@ -1,0 +1,6 @@
+{
+  "name": "world-clock",
+  "dependencies": {
+    "localforage": "~1.3.1"
+  }
+}
